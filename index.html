@@ -1,0 +1,1279 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>年1,200万円の営業パッケージ案</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --blue: #0068b6;
+        --blue-soft: #e6f0f8;
+        --red: #fb4113;
+        --red-soft: #ffede7;
+        --ink: #221714;
+        --ink2: #4a3f3b;
+        --line: #ddd6d2;
+        --bg: #fbf9f7;
+        --card: #ffffff;
+        --green: #1e7a4c;
+        --green-soft: #e7f4ec;
+        --amber: #9a6200;
+        --amber-soft: #fff4dc;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        -webkit-text-size-adjust: 100%;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family:
+          "Noto Sans JP", "Hiragino Sans", "Yu Gothic UI", sans-serif;
+        font-size: 18px;
+        line-height: 1.85;
+      }
+      .wrap {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 20px 80px;
+      }
+      header.hero {
+        background: var(--ink);
+        color: #fff;
+        padding: 56px 0 48px;
+        margin-bottom: 40px;
+      }
+      header.hero .wrap {
+        padding-bottom: 0;
+      }
+      .kicker {
+        font-size: 15px;
+        letter-spacing: 0.18em;
+        color: #ffb59e;
+        font-weight: 700;
+      }
+      h1 {
+        word-break: keep-all;
+        overflow-wrap: anywhere;
+        font-size: 38px;
+        line-height: 1.4;
+        margin: 12px 0 16px;
+        font-weight: 900;
+      }
+      .hero p {
+        font-size: 18px;
+        color: #ede6e2;
+        margin: 0;
+      }
+      .meta {
+        margin-top: 20px;
+        font-size: 15px;
+        color: #cfc5c0;
+      }
+      h2 {
+        font-size: 28px;
+        line-height: 1.45;
+        margin: 64px 0 8px;
+        padding-left: 16px;
+        border-left: 8px solid var(--blue);
+        break-after: avoid;
+      }
+      h2 .num {
+        color: var(--blue);
+        margin-right: 8px;
+      }
+      .lead {
+        font-size: 19px;
+        color: var(--ink2);
+        margin: 0 0 24px;
+      }
+      h3 {
+        font-size: 24px;
+        margin: 36px 0 12px;
+        line-height: 1.5;
+        break-after: avoid;
+      }
+      p {
+        margin: 0 0 16px;
+      }
+      strong {
+        font-weight: 700;
+      }
+      .mark {
+        background: linear-gradient(transparent 60%, #ffd9cc 60%);
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 24px 28px;
+        margin: 16px 0;
+      }
+      .conclusion {
+        border: 2px solid var(--red);
+        background: #fff;
+      }
+      .conclusion h2 {
+        margin-top: 0;
+        border-left-color: var(--red);
+      }
+      .conclusion ol {
+        margin: 0;
+        padding-left: 1.4em;
+      }
+      .conclusion li {
+        margin: 0 0 14px;
+        font-size: 19px;
+      }
+      .tbl {
+        overflow-x: auto;
+        margin: 16px 0;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        background: #fff;
+        font-size: 17px;
+        min-width: 640px;
+      }
+      table.narrow {
+        min-width: 0;
+      }
+      th,
+      td {
+        border: 1px solid var(--line);
+        padding: 12px 14px;
+        text-align: left;
+        vertical-align: top;
+      }
+      th {
+        background: #f3eeeb;
+        font-weight: 700;
+      }
+      td.c,
+      th.c {
+        text-align: center;
+      }
+      td.r {
+        text-align: right;
+        white-space: nowrap;
+      }
+      tr.hl td {
+        background: var(--red-soft);
+        font-weight: 700;
+      }
+      .yes {
+        color: var(--green);
+        font-weight: 900;
+      }
+      .no {
+        color: #aaa;
+      }
+      .badge {
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 1px 8px;
+        border-radius: 6px;
+        margin-right: 6px;
+        white-space: nowrap;
+        vertical-align: 2px;
+      }
+      .b-pri {
+        background: #2f5d8a;
+        color: #fff;
+      }
+      .b-int {
+        background: var(--green);
+        color: #fff;
+      }
+      .b-sec {
+        background: var(--amber-soft);
+        color: var(--amber);
+        border: 1px solid #e8c77a;
+      }
+      .b-hyp {
+        background: #eee;
+        color: #333;
+        border: 1px solid #bbb;
+      }
+      .fact {
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+        padding: 16px 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .fact:last-child {
+        border-bottom: none;
+      }
+      .fact .big {
+        flex: 0 0 150px;
+        font-size: 32px;
+        font-weight: 900;
+        color: var(--blue);
+        line-height: 1.2;
+      }
+      .fact .big.red {
+        color: var(--red);
+      }
+      .fact .big small {
+        font-size: 16px;
+        font-weight: 700;
+        display: block;
+        color: var(--ink2);
+      }
+      .fact .txt {
+        flex: 1;
+      }
+      .src {
+        font-size: 15px;
+        color: var(--ink2);
+      }
+      .src a {
+        color: var(--blue);
+      }
+      .menu {
+        background: #fff;
+        border: 3px solid var(--blue);
+        border-radius: 16px;
+        padding: 28px 30px;
+        margin: 24px 0;
+      }
+      .menu .name {
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 1.35;
+        margin: 4px 0 8px;
+      }
+      .menu .promise {
+        font-size: 21px;
+        font-weight: 700;
+        color: var(--red);
+        margin: 0 0 16px;
+      }
+      .engines {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+        margin: 18px 0 12px;
+      }
+      .eng {
+        border-radius: 12px;
+        padding: 18px 20px;
+        background: var(--blue-soft);
+        border: 1px solid #b9d3ea;
+      }
+      .eng.red {
+        background: var(--red-soft);
+        border-color: #f7c2b2;
+      }
+      .eng.green {
+        background: var(--green-soft);
+        border-color: #b7dcc6;
+      }
+      .eng .no2 {
+        font-size: 15px;
+        font-weight: 700;
+        color: var(--ink2);
+      }
+      .eng h4 {
+        font-size: 22px;
+        margin: 2px 0 8px;
+        line-height: 1.4;
+      }
+      .eng ul {
+        margin: 0;
+        padding-left: 1.2em;
+        font-size: 17px;
+      }
+      .eng li {
+        margin-bottom: 4px;
+      }
+      .base {
+        background: #f3eeeb;
+        border-radius: 10px;
+        padding: 12px 18px;
+        font-size: 17px;
+      }
+      .oneline {
+        border-left: 6px solid var(--red);
+        background: #fff;
+        padding: 16px 20px;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 16px 0;
+      }
+      .quarters {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+        margin: 16px 0;
+      }
+      .q {
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 16px 16px 12px;
+        border-top: 6px solid var(--blue);
+      }
+      .q:nth-child(2) {
+        border-top-color: #2f8fd0;
+      }
+      .q:nth-child(3) {
+        border-top-color: #e2703a;
+      }
+      .q:nth-child(4) {
+        border-top-color: var(--red);
+      }
+      .q .when {
+        font-size: 15px;
+        font-weight: 700;
+        color: var(--ink2);
+      }
+      .q h4 {
+        font-size: 20px;
+        margin: 2px 0 6px;
+        line-height: 1.4;
+      }
+      .q .add {
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 700;
+        background: var(--red-soft);
+        color: #b8300c;
+        border-radius: 6px;
+        padding: 1px 8px;
+        margin-bottom: 6px;
+      }
+      .q ul {
+        margin: 0;
+        padding-left: 1.1em;
+        font-size: 16px;
+      }
+      .grid2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+      }
+      .lever {
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 18px 22px;
+      }
+      .lever h4 {
+        font-size: 20px;
+        margin: 0 0 6px;
+        line-height: 1.45;
+      }
+      .lever h4 span {
+        color: var(--red);
+        margin-right: 6px;
+      }
+      .lever p {
+        margin: 0;
+        font-size: 17px;
+      }
+      .ladder {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 16px 0;
+      }
+      .step {
+        display: grid;
+        grid-template-columns: 240px 1fr;
+        gap: 12px;
+        align-items: center;
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 14px 18px;
+      }
+      .step .p {
+        font-weight: 900;
+        font-size: 19px;
+      }
+      .step.new {
+        border: 2px solid var(--red);
+        background: var(--red-soft);
+      }
+      .step.new .p {
+        color: var(--red);
+      }
+      .note {
+        font-size: 17px;
+        color: var(--ink2);
+        background: #f3eeeb;
+        border-radius: 8px;
+        padding: 12px 16px;
+        margin: 12px 0;
+      }
+      ul.check {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      ul.check li {
+        padding: 10px 0 10px 36px;
+        position: relative;
+        border-bottom: 1px dashed var(--line);
+      }
+      ul.check li:last-child {
+        border-bottom: none;
+      }
+      ul.check li::before {
+        content: "✓";
+        position: absolute;
+        left: 6px;
+        top: 10px;
+        color: var(--green);
+        font-weight: 900;
+      }
+      .timeline {
+        border-left: 4px solid var(--blue);
+        margin: 16px 0 16px 8px;
+        padding-left: 24px;
+      }
+      .timeline div {
+        margin: 0 0 18px;
+        position: relative;
+      }
+      .timeline div::before {
+        content: "";
+        position: absolute;
+        left: -34px;
+        top: 8px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: var(--blue);
+      }
+      .timeline b {
+        color: var(--blue);
+      }
+      .decide {
+        background: var(--amber-soft);
+        border: 1px solid #e8c77a;
+        border-radius: 12px;
+        padding: 20px 24px;
+      }
+      .decide ol {
+        margin: 0;
+        padding-left: 1.4em;
+      }
+      .decide li {
+        margin-bottom: 10px;
+      }
+      .sources ol {
+        padding-left: 1.4em;
+        font-size: 17px;
+      }
+      .sources li {
+        margin-bottom: 8px;
+        word-break: break-all;
+      }
+      footer {
+        margin-top: 56px;
+        font-size: 15px;
+        color: var(--ink2);
+        border-top: 1px solid var(--line);
+        padding-top: 16px;
+      }
+      @media (max-width: 720px) {
+        body {
+          font-size: 17px;
+        }
+        h1 {
+          font-size: 28px;
+        }
+        h2 {
+          font-size: 24px;
+        }
+        h3 {
+          font-size: 21px;
+        }
+        .engines,
+        .quarters,
+        .grid2 {
+          grid-template-columns: 1fr;
+        }
+        .fact {
+          flex-direction: column;
+          gap: 4px;
+        }
+        .fact .big {
+          flex: none;
+        }
+        .step {
+          grid-template-columns: 1fr;
+        }
+        .menu {
+          padding: 22px 18px;
+        }
+        .menu .name {
+          font-size: 26px;
+        }
+        .card {
+          padding: 20px 18px;
+        }
+        .oneline {
+          font-size: 18px;
+        }
+      }
+      @media print {
+        header.hero {
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+        .q,
+        .eng,
+        .lever,
+        .fact {
+          break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="wrap">
+        <div class="kicker">STRATEGY MEMO ｜ 2026-10-31 ｜ その2</div>
+        <h1>年1,200万円でも<wbr />払いたくなる<br />営業の新メニュー案</h1>
+        <p>
+          商談を増やす仕組みと、決め切る営業担当を、1年まとめて預かる。A社の発信・AI検索対策・決裁者紹介・営業育成を1つにした年間契約の設計
+        </p>
+        <div class="meta">
+          根拠の種類を色で区別しています：<span class="badge b-pri"
+            >調査（一次確認済）</span
+          ><span class="badge b-int">A社の社内記録</span
+          ><span class="badge b-sec">二次情報</span
+          ><span class="badge b-hyp">仮説・計算例</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="card conclusion">
+        <h2>結論</h2>
+        <ol>
+          <li>
+            売るものは「AIの使い方」ではなく、<strong class="mark"
+              >「商談の数」と「受注率」</strong
+            >です。経営者が自分でAIを使えるようになっても、<strong>会うべき決裁者への紹介</strong>と、<strong>営業担当を毎月育てること</strong>は、自分ではできません。ここに年間で払う理由があります。
+          </li>
+          <li>
+            新メニュー案（仮称）<strong>「AI営業推進室」</strong>：月100万円×12か月。①商談を増やす（発信・プレスリリース・AI検索対策・決裁者紹介）、②決め切る（実際の商談の解剖と、担当者ごとの指導）、③毎月測る（数字の自動集計と月1回の経営会議）を1年まとめて預かります。
+          </li>
+          <li>
+            払いたくなる理由は、値引きではなく<strong>「元が取れる線」が先に見えること</strong>です。1件の粗利が100万円の会社なら、受注が年12件（月1件）増えれば回収できます。初回の面談で、相手の数字を使ってこの計算を一緒にします。
+          </li>
+          <li>
+            4〜12か月目も払い続けたくなるように、<strong>後半ほど成果が積み上がる形</strong>にします。記事・事例・紹介・保留案件の再商談・勝ちパターン集を毎月「累計」で報告し、四半期ごとに集客の経路を1本ずつ足します。
+          </li>
+          <li>
+            まず、すでにA社に月50万〜100万円を払った実績のある会社から3社に提示し、<strong>90日で1社決まれば正式化</strong>します。成果の保証は書かず、代わりに「6か月時点の出口」を用意するかを決めます。
+          </li>
+        </ol>
+      </section>
+
+      <h2>
+        <span class="num">1</span>なぜ「商談」と「受注」をセットにするのか
+      </h2>
+      <p class="lead">
+        買い手は、売り手に会う前に候補を絞るようになりました。会えた後は、担当者の説明と事例で決まります。入口だけ、出口だけを買っても成果が出にくい理由がここにあります。
+      </p>
+
+      <h3>1-1　買い手の動き（日本のBtoB購買、2026年）</h3>
+      <div class="card">
+        <div class="fact">
+          <div class="big">63.5<small>%</small></div>
+          <div class="txt">
+            売り手に連絡する時点で、すでに<strong>複数の候補を挙げ終えている</strong>買い手の割合です（売り手に連絡する人
+            1,431名のうち）。候補に入っていない会社は、商談の機会そのものがありません。
+            <div class="src">
+              <span class="badge b-pri">調査（一次確認済）</span>HubSpot
+              Japan「日本のBtoB購買に関する意識・実態調査2026」
+            </div>
+          </div>
+        </div>
+        <div class="fact">
+          <div class="big">41.6<small>%</small></div>
+          <div class="txt">
+            前回の購買と比べて「生成AIやAI検索が購買判断に与える影響が増えた」と答えた人の割合で、変化の項目の中で最多でした。生成AIを使う買い手の<strong>50.3%</strong>は、候補の洗い出しにAIを使っています。AIの答えに名前が出ることが、候補入りの条件になりつつあります。
+            <div class="src">
+              <span class="badge b-pri">調査（一次確認済）</span>同上
+            </div>
+          </div>
+        </div>
+        <div class="fact">
+          <div class="big red">59.8<small>%</small></div>
+          <div class="txt">
+            信頼できる情報として<strong>「担当者からの個別説明」</strong>を挙げた人の割合です。1位は価格・契約条件が明瞭な情報（60.6%）、3位は導入事例（57.0%）でした。会った後に決め手になるのは、営業担当の説明の質と事例です。
+            <div class="src">
+              <span class="badge b-pri">調査（一次確認済）</span>同上
+            </div>
+          </div>
+        </div>
+        <div class="fact">
+          <div class="big">46.9<small>%</small></div>
+          <div class="txt">
+            社内で意思決定に関わる人が<strong>5人以上</strong>いた購買の割合です。比較した会社が2社以上だった割合は80.3%でした。1回の面談では決まらず、決裁者を巻き込んで次の打ち合わせにつなぐ力が要ります。
+            <div class="src">
+              <span class="badge b-pri">調査（一次確認済）</span
+              >同上（2026年6月11〜16日、BtoB商材の選定・決裁に関わった従業員50名以上の企業の勤務者1,573名）
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3>1-2　売り手の事情</h3>
+      <div class="card">
+        <div class="fact">
+          <div class="big">2倍超</div>
+          <div class="txt">
+            営業職の有効求人倍率は2倍を超える水準とされ、全体（1.18倍）より高い状態です。営業担当を1人増やすことさえ簡単ではありません。
+            <div class="src">
+              <span class="badge b-sec">二次情報</span
+              >採用市場のレポートで「営業2.20倍」。対象月の表記に揺れがあるため、水準の目安として扱います
+            </div>
+          </div>
+        </div>
+        <div class="fact">
+          <div class="big">約4割</div>
+          <div class="txt">
+            BtoB企業の経営者100名のうち、約4割が「理想どおりのリード獲得ができていない」と回答しました。理由として「施策が相手に響いていない」「獲得後のフォロー不足」が挙がっています。
+            <div class="src">
+              <span class="badge b-sec">二次情報</span
+              >IDEATECH調査（2024年5月）の報道
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3>1-3　A社自身の記録が示すこと</h3>
+      <div class="card">
+        <div class="fact">
+          <div class="big">51<small>件／94件</small></div>
+          <div class="txt">
+            2026年7月7日〜9月17日の商談記録94件のうち、<strong>半数を超える51件が「保留」</strong>でした（勝ち19・前向きな保留8・負け11・情報交換5）。新しい商談を増やす前に、すでにある保留を受注に変える余地が大きいということです。
+            <div class="src">
+              <span class="badge b-int">A社の社内記録</span
+              >「リード獲得＆営業力アップ特別カリキュラム」資料。「勝ち」には紹介パートナーの合意なども含み、受注率ではありません
+            </div>
+          </div>
+        </div>
+        <div class="fact">
+          <div class="big red">13.3<small>% 対 4.8%</small></div>
+          <div class="txt">
+            2回目の面談があった場合と、なかった場合の受注率です。また、受注した32社のうち24社は、初回の次の予定がそのまま契約の開始でした。<strong>受注は初回の質と、2回目につなぐ力で決まります。</strong>ここは研修1回では身につかず、実際の商談を毎月振り返ることで伸びる部分です。
+            <div class="src">
+              <span class="badge b-int">A社の社内記録</span
+              >営業振り返り（2026年1〜10月、推定値を含む）
+            </div>
+          </div>
+        </div>
+        <div class="fact">
+          <div class="big">3条件</div>
+          <div class="txt">
+            商談が前に進みやすかったのは、①困りごとを業務の名前まで具体的にした、②決裁者が同席する次回の条件を決めた、③次の日程をその場で決めた、の3つがそろったときでした。
+            <div class="src">
+              <span class="badge b-int">A社の社内記録</span
+              >同資料。94件から見た傾向で、因果や成果を保証するものではありません
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2><span class="num">2</span>新メニュー案：AI営業推進室（仮称）</h2>
+      <div class="menu">
+        <div class="src">年間契約　月100万円×12か月（年1,200万円・税別）</div>
+        <div class="name">AI営業推進室（仮称）</div>
+        <p class="promise">
+          商談を増やす仕組みと、決め切る営業担当を、1年まとめて預かる。
+        </p>
+        <div class="engines">
+          <div class="eng">
+            <div class="no2">① 商談を増やす</div>
+            <h4>候補に入る・紹介される</h4>
+            <ul>
+              <li>経営者の知見をnote記事に（半自動）</li>
+              <li>プレスリリースの定期配信</li>
+              <li>
+                AI検索で名前が出るためのサイト改善（四半期ごとに診断と再診断）
+              </li>
+              <li>会うべき決裁者の紹介（A社の経営者ネットワーク）</li>
+            </ul>
+          </div>
+          <div class="eng red">
+            <div class="no2">② 決め切る</div>
+            <h4>営業担当を毎月育てる</h4>
+            <ul>
+              <li>最初の3か月：2時間×5回の実践研修（最大10名）</li>
+              <li>毎月2回：実際の商談の記録をAIで解剖し、担当者ごとに指導</li>
+              <li>保留案件の再商談リストを毎月更新</li>
+              <li>提案書の型を作り、短時間で個別化</li>
+            </ul>
+          </div>
+          <div class="eng green">
+            <div class="no2">③ 毎月測る</div>
+            <h4>数字で経営会議をする</h4>
+            <ul>
+              <li>商談数・2回目につながった率・受注率・単価を毎週自動で集計</li>
+              <li>月1回、代表とCIOが経営会議に同席</li>
+              <li>四半期ごとに「元が取れたか」を計算して報告</li>
+            </ul>
+          </div>
+        </div>
+        <div class="base">
+          <strong>土台：</strong
+          >AI環境の月次点検（AI車検・仮称）を同梱。AIに任せる範囲・承認する人・入れてはいけない情報を決めてから動かします。
+        </div>
+      </div>
+
+      <h3>既存の600万円の商品と、何が違うのか</h3>
+      <p>
+        A社にはすでに「AIマーケティングコックピット」（600万円・税別）があり、実践研修（2時間×5回）、note・プレスリリースでの継続発信、商談と受注の見える化までを含んでいます。今回の案との違いは1行で言えます。
+      </p>
+      <div class="oneline">
+        600万円は「商談を増やす仕組みを作る」まで。1,200万円は、増えた商談を毎月受注に変える指導と、決裁者への紹介を足し、1年間の運営と成果の計測まで預かる。
+      </div>
+      <div class="tbl">
+        <table class="narrow">
+          <thead>
+            <tr>
+              <th style="width: 34%">中身</th>
+              <th class="c">AIマーケティング<br />コックピット（600万円）</th>
+              <th class="c">AI営業推進室<br />（年1,200万円・案）</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>実践研修（2時間×5回・最大10名）</td>
+              <td class="c yes">○</td>
+              <td class="c yes">○</td>
+            </tr>
+            <tr>
+              <td>note・プレスリリースでの継続発信</td>
+              <td class="c yes">○</td>
+              <td class="c yes">○</td>
+            </tr>
+            <tr>
+              <td>商談と受注の見える化</td>
+              <td class="c yes">○</td>
+              <td class="c yes">○（毎月の経営会議つき）</td>
+            </tr>
+            <tr>
+              <td>実際の商談を毎月解剖し、担当者ごとに指導</td>
+              <td class="c no">—</td>
+              <td class="c yes">○（月2回）</td>
+            </tr>
+            <tr>
+              <td>保留案件の再商談リストの運営</td>
+              <td class="c no">—</td>
+              <td class="c yes">○（毎月）</td>
+            </tr>
+            <tr>
+              <td>決裁者の紹介</td>
+              <td class="c no">—</td>
+              <td class="c yes">○（枠は要決定）</td>
+            </tr>
+            <tr>
+              <td>AI検索対策（診断→改善の指示書→再診断）</td>
+              <td class="c no">—</td>
+              <td class="c yes">○（四半期ごと）</td>
+            </tr>
+            <tr>
+              <td>AI環境の月次点検（AI車検）</td>
+              <td class="c no">—</td>
+              <td class="c yes">○</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="note">
+        600万円の商品が一括払いか年額かは資料に書かれていません。どちらかによって、2つの商品の並べ方が変わります（「決めること」に記載）。
+      </div>
+
+      <h2><span class="num">3</span>12か月の進め方：後半ほど積み上がる</h2>
+      <p class="lead">
+        A社の既存の高額商品には、前半が厚く後半が薄い形があります（例：CEO AI
+        Bootcampは月100万円×3か月の後、月20万円×9か月）。今回は毎月同じ金額なので、後半を「引き継ぎ」や「自走」にすると、7か月目ごろに減額の相談が来ます。そこで、後半ほど成果の量が増える設計にします。
+      </p>
+      <div class="quarters">
+        <div class="q">
+          <div class="when">1〜3か月目</div>
+          <h4>土台をつくる</h4>
+          <span class="add">経路1：note発信</span>
+          <ul>
+            <li>今の数字を測る（商談数・2回目率・受注率・単価）</li>
+            <li>集計の仕組みを作る</li>
+            <li>実践研修 全5回</li>
+            <li>保留案件を棚卸し</li>
+          </ul>
+        </div>
+        <div class="q">
+          <div class="when">4〜6か月目</div>
+          <h4>経路を足す</h4>
+          <span class="add">経路2：プレスリリース＋紹介</span>
+          <ul>
+            <li>決裁者の紹介を開始</li>
+            <li>商談の解剖と指導を月2回</li>
+            <li>保留案件の再商談を毎月</li>
+            <li>6か月時点で数字を見直す</li>
+          </ul>
+        </div>
+        <div class="q">
+          <div class="when">7〜9か月目</div>
+          <h4>AI検索に載る</h4>
+          <span class="add">経路3：AI検索対策＋事例</span>
+          <ul>
+            <li>サイトを診断し、改善し、再診断</li>
+            <li>受注した案件を事例記事に</li>
+            <li>勝ちパターン集 第1版</li>
+          </ul>
+        </div>
+        <div class="q">
+          <div class="when">10〜12か月目</div>
+          <h4>既存客から広げる</h4>
+          <span class="add">経路4：既存客の拡張・紹介</span>
+          <ul>
+            <li>休止や解約の相談を再提案につなげる型</li>
+            <li>勝ちパターン集 第2版・新人用の教材</li>
+            <li>2年目の計画</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <strong>毎月の報告は「累計」で見せます。</strong
+        >記事の本数、事例の数、紹介した決裁者の数、保留から再商談になった件数、勝ちパターンの数を、契約開始からの合計で示します。月を追うごとに数字が増えていくことが、続ける理由になります。
+      </div>
+      <p>
+        <strong>2年目の形（案）：</strong
+        >同じ金額で2つ目の部署や商品に広げるか、運営だけの段（金額は要決定）に下げるかを選べるようにします。いずれも「やめる」以外の選択肢を用意しておくためです。
+      </p>
+
+      <h2><span class="num">4</span>価格の考え方：元が取れる線を先に見せる</h2>
+
+      <h3>4-1　元が取れる受注件数</h3>
+      <p>
+        年1,200万円を、1件の受注で得られる粗利で割ると、回収に必要な受注の増加数が出ます。
+      </p>
+      <div class="tbl">
+        <table class="narrow">
+          <thead>
+            <tr>
+              <th>1件あたりの粗利</th>
+              <th class="c">年間で必要な受注の増加</th>
+              <th class="c">月あたり</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>50万円</td>
+              <td class="c">24件</td>
+              <td class="c">2件</td>
+            </tr>
+            <tr class="hl">
+              <td>100万円</td>
+              <td class="c">12件</td>
+              <td class="c">1件</td>
+            </tr>
+            <tr>
+              <td>200万円</td>
+              <td class="c">6件</td>
+              <td class="c">0.5件</td>
+            </tr>
+            <tr>
+              <td>400万円</td>
+              <td class="c">3件</td>
+              <td class="c">0.25件</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        このため、対象は<strong>1件の粗利が100万円以上のBtoB企業</strong>が中心です。粗利が50万円を下回る会社には、この商品ではなく単品（発信だけ、研修だけ）を勧めます。
+      </p>
+
+      <h3>4-2　計算例（数字はすべて仮定）</h3>
+      <div class="card">
+        <p>
+          <span class="badge b-hyp">計算例</span
+          >今の状態：商談が月20件、受注率10%、1件の粗利120万円（単価300万円・粗利率40%）。受注は月2件、粗利は年2,880万円。
+        </p>
+        <div class="tbl">
+          <table>
+            <thead>
+              <tr>
+                <th>想定</th>
+                <th class="c">商談数</th>
+                <th class="c">受注率</th>
+                <th class="c">受注／月</th>
+                <th class="c">粗利の増加／年</th>
+                <th class="c">費用との比</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>控えめ（どちらも1.2倍）</td>
+                <td class="c">24件</td>
+                <td class="c">12%</td>
+                <td class="c">2.88件</td>
+                <td class="r">＋1,267万円</td>
+                <td class="c">ほぼ回収</td>
+              </tr>
+              <tr class="hl">
+                <td>目標（商談1.5倍・受注率1.3倍）</td>
+                <td class="c">30件</td>
+                <td class="c">13%</td>
+                <td class="c">3.9件</td>
+                <td class="r">＋2,736万円</td>
+                <td class="c">約2.3倍</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="src">
+          計算式は「年間の粗利＝商談数×受注率×単価×粗利率」（A社の既存資料と同じ式）。効果が出始めるまでの時間差は入れていません。目標は相手の今の数字からの倍率で置き、「毎月100件」のような決まった数は約束しません。
+        </p>
+      </div>
+
+      <h3>4-3　ほかの手段との比べ方</h3>
+      <p>
+        自社の単品価格の合計から割り引く見せ方はしません。比べる相手は、買い手が実際に検討する社外の手段です。
+      </p>
+      <div class="tbl">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 24%">手段</th>
+              <th style="width: 22%">費用の目安</th>
+              <th class="c">商談を増やす</th>
+              <th class="c">受注率を上げる</th>
+              <th class="c">決裁者の紹介</th>
+              <th class="c">社内に型が残る</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>営業担当を1人採用</td>
+              <td>
+                初年度 約900万円〜<br /><span class="src"
+                  >年収600万円の場合の紹介料（30〜35%）と法定福利費の概算</span
+                >
+              </td>
+              <td class="c">△</td>
+              <td class="c">△</td>
+              <td class="c no">—</td>
+              <td class="c no">—</td>
+            </tr>
+            <tr>
+              <td>アポ取り・インサイドセールスの代行</td>
+              <td>1名あたり月30〜120万円</td>
+              <td class="c yes">○</td>
+              <td class="c no">—</td>
+              <td class="c no">—</td>
+              <td class="c no">—</td>
+            </tr>
+            <tr>
+              <td>単発の営業研修</td>
+              <td>内容により異なる</td>
+              <td class="c no">—</td>
+              <td class="c">
+                △<br /><span class="src">元のやり方に戻りやすい</span>
+              </td>
+              <td class="c no">—</td>
+              <td class="c">△</td>
+            </tr>
+            <tr class="hl">
+              <td>AI営業推進室（案）</td>
+              <td>月100万円（年1,200万円）</td>
+              <td class="c yes">○</td>
+              <td class="c yes">○</td>
+              <td class="c yes">○</td>
+              <td class="c yes">○</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="src">
+        <span class="badge b-sec">二次情報</span
+        >紹介料の相場（理論年収の30〜35%）と代行の費用（1名あたり月30〜120万円）は、比較サイトや解説記事の数字です。<span
+          class="badge b-hyp"
+          >仮定</span
+        >採用の初年度費用は、年収600万円・紹介料35%・法定福利費約15%を仮定した概算です。「元のやり方に戻りやすい」はA社の既存資料が挙げる「継続の壁」です。
+      </p>
+
+      <h2><span class="num">5</span>払いたくなる6つの仕掛け</h2>
+      <div class="grid2">
+        <div class="lever">
+          <h4><span>1</span>経営者が見ている数字で約束する</h4>
+          <p>
+            「AIを導入する」ではなく「商談数×受注率」を目標にします。成果の保証はしませんが、目標と測り方は契約の前に決めます。
+          </p>
+        </div>
+        <div class="lever">
+          <h4><span>2</span>元が取れる線を初回に一緒に計算する</h4>
+          <p>
+            相手の単価・粗利率・今の商談数で「年に何件増えれば回収か」を出します。払う前に判断の材料がそろいます。
+          </p>
+        </div>
+        <div class="lever">
+          <h4><span>3</span>後半ほど積み上がる</h4>
+          <p>
+            記事・事例・紹介・再商談・勝ちパターンを累計で報告し、四半期ごとに経路を1本足します。続けるほど増えるものがある状態にします。
+          </p>
+        </div>
+        <div class="lever">
+          <h4><span>4</span>人のつながりはAIでは作れない</h4>
+          <p>
+            決裁者の紹介は、経営者が自分でClaude
+            CodeやCodexを使えても代わりがききません。「自分でやれる」と言われにくい部分です。
+          </p>
+        </div>
+        <div class="lever">
+          <h4><span>5</span>社員が育ち、型が会社に残る</h4>
+          <p>
+            勝ちパターン集と新人用の教材が残ります。営業担当が辞めても、やり方が会社に残ります。
+          </p>
+        </div>
+        <div class="lever">
+          <h4><span>6</span>出口がある（要決定）</h4>
+          <p>
+            6か月時点で決めた基準に届かなければ、残りを違約金なしで解約できる条項を入れる案です。保証ではなく、契約の柔らかさで不安を下げます。
+          </p>
+        </div>
+      </div>
+
+      <h2><span class="num">6</span>誰に売るか</h2>
+      <h3>対象の条件</h3>
+      <div class="card">
+        <ul class="check">
+          <li>BtoBで、1件の粗利が100万円以上</li>
+          <li>営業担当が3〜10名（研修の定員が10名のため）</li>
+          <li>経営者に、記事にできる知見や経験がある</li>
+          <li>今の商談数と受注率を出せる（顧客管理の記録や議事録がある）</li>
+          <li>経営者本人が月1回の経営会議に出られる</li>
+        </ul>
+      </div>
+      <h3>最初に声をかける先</h3>
+      <p>
+        すでにA社に高い金額を払った実績がある会社から始めます。「月100万円を払うか」を一から説得する必要がないためです。
+      </p>
+      <div class="tbl">
+        <table class="narrow">
+          <thead>
+            <tr>
+              <th style="width: 34%">候補の群</th>
+              <th>理由</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                CEO AI
+                Bootcamp（最初の3か月は月100万円）を契約した会社のうち、営業組織があるBtoB企業
+              </td>
+              <td>
+                月100万円を払った実績がある。4か月目以降の月20万円の段から、成果が見える形で上がれる
+              </td>
+            </tr>
+            <tr>
+              <td>bondプレミアム（月50万円・年600万円）の利用企業</td>
+              <td>
+                すでに営業に年600万円を払っている。紹介に、発信と育成が加わる
+              </td>
+            </tr>
+            <tr>
+              <td>
+                AIマーケティングコックピット（600万円）を検討・導入した会社
+              </td>
+              <td>仕組みを作った後の「運営」と「受注率」が次の課題になる</td>
+            </tr>
+            <tr>
+              <td>営業顧問（月30万円）の利用企業</td>
+              <td>
+                経営者の営業相談はすでにある。営業担当の育成と商談の量が足りない会社
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="note">資料を送るのではなく、面談の場で提示します。</div>
+
+      <h3>既存メニューとの並び</h3>
+      <div class="ladder">
+        <div class="step">
+          <div class="p">月5万円</div>
+          <div>AI経営者クラブβ ── 出会い・発信・学び</div>
+        </div>
+        <div class="step">
+          <div class="p">月5万／10万円（案）</div>
+          <div>AI車検（仮称） ── 自分でAIを使う経営者の環境の保守</div>
+        </div>
+        <div class="step">
+          <div class="p">月15万／30万円</div>
+          <div>代表の顧問light・営業顧問 ── 経営者本人の営業相談と会食</div>
+        </div>
+        <div class="step">
+          <div class="p">月50万円（年600万円）</div>
+          <div>bondプレミアム ── 決裁者とのつながり</div>
+        </div>
+        <div class="step">
+          <div class="p">年240万円（月20万円）</div>
+          <div>生成AI活用顧問 ── 教わりながら使う</div>
+        </div>
+        <div class="step">
+          <div class="p">初年度480万円</div>
+          <div>
+            CEO AI Bootcamp ──
+            経営者専用のAI環境を集中して作る（月100万円×3か月＋月20万円×9か月）
+          </div>
+        </div>
+        <div class="step">
+          <div class="p">600万円</div>
+          <div>AIマーケティングコックピット ── 商談を増やす仕組みを作る</div>
+        </div>
+        <div class="step new">
+          <div class="p">年1,200万円（案）</div>
+          <div>
+            <strong>AI営業推進室（仮称）</strong> ──
+            商談を増やし、決め切る力を1年まとめて預かる
+          </div>
+        </div>
+      </div>
+      <p>
+        前回のレポートで出した「AI車検」が、卒業した経営者を残す下の段だとすると、今回の案は成果まで預けたい会社のための上の段です。同じ「自分でAIを使う経営者が増えた」という流れに対して、下と上の両方に受け皿を作ることになります。
+      </p>
+
+      <h2><span class="num">7</span>確かめ方と撤退の基準</h2>
+      <div class="timeline">
+        <div>
+          <b>0〜30日：</b
+          >6章の4つの群から候補を10社選び、そのうち面談予定のある3社に提示する。初回の面談で「元が取れる線」を相手の数字で計算する。
+        </div>
+        <div>
+          <b>31〜90日：</b
+          >1社が契約すれば正式化する。1社目は出口条項つきで始め、毎月の累計報告の形を固める。
+        </div>
+        <div>
+          <b>4〜6か月目：</b
+          >1社目の商談数・2回目につながった率・受注率を、契約前の数字と比べる。
+        </div>
+        <div>
+          <b>判定：</b
+          >90日で10社に提示して契約が0件なら、価格ではなく中身（紹介の枠、指導の回数）から見直す。正式化した後は、引き受ける社数が少ない商品なので、受注件数ではなく、1社目の数字の変化と、2社目以降が決まるかどうかで判断します。
+        </div>
+      </div>
+      <p>
+        <strong>引き受けられる社数には上限があります。</strong
+        >決裁者の紹介、経営会議、商談の指導は、どれも代表とCIOの時間を使うためです。上限の社数は「決めること」に入れています。
+      </p>
+
+      <section class="decide">
+        <h3 style="margin-top: 0">A社が決める必要があること</h3>
+        <ol>
+          <li>名前（「AI営業推進室」は仮の名前です）</li>
+          <li>
+            AIマーケティングコックピット（600万円）は一括か年額か。今回の案をその上位版として売るか、別の商品として並べるか
+          </li>
+          <li>
+            既存のコックピット系の商品と同じ事業として扱うか、別の事業として扱うか（撤退の基準もそれに合わせます）
+          </li>
+          <li>決裁者の紹介に回せる枠と、初年度に引き受ける社数の上限</li>
+          <li>
+            6か月時点の出口条項を入れるか。入れる場合の基準（例：商談数が契約前の1.2倍に届かない）
+          </li>
+          <li>
+            2年目の形（同額で範囲を広げる／運営だけの段に下げる、その金額）
+          </li>
+        </ol>
+      </section>
+
+      <section class="sources">
+        <h2><span class="num">8</span>出典</h2>
+        <ol>
+          <li>
+            <span class="badge b-pri">調査（一次確認済）</span>HubSpot Japan
+            プレスリリース「日本のBtoB購買に関する意識・実態調査2026」2026-07-16（調査期間2026年6月11〜16日、1,573名、マクロミル実施）　<a
+              href="https://www.hubspot.jp/hubfs/APAC_JAPAN/6.%20press%20release/%E3%80%90%E3%83%97%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%80%91HubSpot%20Japan%E3%81%8C%E3%80%8C%E6%97%A5%E6%9C%AC%E3%81%AEBtoB%E8%B3%BC%E8%B2%B7%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%20%E6%84%8F%E8%AD%98%E3%83%BB%E5%AE%9F%E6%85%8B%E8%AA%BF%E6%9F%BB2026%E3%80%8D%E3%82%92%E7%99%BA%E8%A1%A8.pdf"
+              >hubspot.jp（PDF）</a
+            >
+          </li>
+          <li>
+            <span class="badge b-sec">二次情報</span
+            >同調査の報道（コマースピック 2026-07-17）　<a
+              href="https://www.commercepick.com/archives/98032"
+              >commercepick.com/archives/98032</a
+            >
+          </li>
+          <li>
+            <span class="badge b-sec">二次情報</span
+            >バイトルPRO「正社員の採用動向」（職種別の有効求人倍率
+            営業2.20倍）　<a
+              href="https://www.baitoru.com/solution/column/recruitment-trends-full-time/"
+              >baitoru.com</a
+            >
+          </li>
+          <li>
+            <span class="badge b-sec">二次情報</span
+            >IDEATECH「リード獲得施策」調査（2024年5月、BtoB経営者100名）の報道　<a
+              href="https://ecnomikata.com/ecnews/marketing/43286/"
+              >ecnomikata.com</a
+            >
+          </li>
+          <li>
+            <span class="badge b-sec">二次情報</span
+            >人材紹介の手数料相場（理論年収の30〜35%）　<a
+              href="https://imitsu.jp/cost/recruiting/article"
+              >imitsu.jp</a
+            >／<a
+              href="https://directscout.recruit.co.jp/biz/guide/article/2982/"
+              >directscout.recruit.co.jp</a
+            >
+          </li>
+          <li>
+            <span class="badge b-sec">二次情報</span
+            >インサイドセールス代行の費用（1名あたり月30〜120万円、中心帯は月30〜70万円）　<a
+              href="https://start-link.jp/hubspot-ai/btob-marketing/inside-sales/inside-sales-outsource-comparison"
+              >start-link.jp</a
+            >／<a href="https://atsoho.com/blog/sales-inside-sales-cost"
+              >atsoho.com</a
+            >
+          </li>
+          <li>
+            <span class="badge b-int">A社の社内記録</span
+            >「リード獲得＆営業力アップ特別カリキュラム」資料（商談記録94件の分類・前進しやすい3条件・AIマーケティングコックピット600万円の内容）
+          </li>
+          <li>
+            <span class="badge b-int">A社の社内記録</span>営業振り返り
+            2026年1〜10月（2回目の面談の有無による受注率、受注32社中24社）
+          </li>
+          <li>
+            <span class="badge b-int">A社の社内記録</span
+            >「note発信の半自動化支援」「LLMOアナライザー」「PR
+            TIMES配信の半自動化」の各紹介資料（2026年10月）、営業支援4プランの価格表
+          </li>
+        </ol>
+      </section>
+
+      <footer>
+        2026-10-31 作成。継続課題と「AI車検（仮称）」の案をまとめた<a
+          href="https://suzuki-commits.github.io/ai-support-new-menu-20261031/"
+          >前回のレポート</a
+        >の続きです。価格（月100万円×12か月）はA社の指定によるものです。計算例の数字はすべて仮定で、成果を約束するものではありません。
+      </footer>
+    </main>
+  </body>
+</html>
